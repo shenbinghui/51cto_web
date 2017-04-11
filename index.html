@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/index.css">
+	<!-- <script src='./js/jquery.min.js' ></script> -->
+	<script src='./js/vue.min.js'></script>
+	<!-- <script src="https://unpkg.com/vue/dist/vue.js"></script> -->
+	<script src='./js/index.js'></script>
+	
+</head>
+<body>
+	<div id='index'>
+        <div class='header'>
+        	<div class='h_title'>
+        	    <span class='fl'>{{title}}</span>
+        	    <div class='h_info fr '>
+        	    	<a href="#">{{info.login}}</a>
+        	    	<a href="#">{{info.reg}}</a>
+        	    	<a href="#" class='shop_car'>{{info.shop}}<em>0</em></a>
+        	    	<a href="#">{{info.school}}</a>
+        	    	<a href="#">{{info.story}}</a>
+        	    	<div class='web_bar fr' id='web_bar' v-on:mouseover='showNavBar' v-on:mouseleave='hideNavBar'>
+        	    		<a href="#">{{nav.title}}</a>
+        	    		<ul id='ul_bar' v-bind:class='togleBar'>
+        	    			<li>{{nav.pro}}</li>
+        	    			<li>{{nav.video}}</li>
+        	    			<li>{{nav.company}}</li>
+        	    			<li>{{nav.class}}</li>
+        	    			<li>{{nav.cto}}</li>
+        	    			<li>{{nav.train}}</li>
+        	    			<li>{{nav.WTO}}</li>
+        	    			<li>{{nav.SALO}}</li>
+        	    		</ul>
+        	    	</div>
+        	    </div>
+        	</div>
+        </div>
+        <div class='content' id='content'>
+        	<div class='main_ad'></div>
+        	<div class='search'>
+        	    <div class='pic clear'>
+	        		<h1 class='logo fl'></h1>
+	        		<img  class='fl' src='./images/sublogo01.png' alt="for dream" />
+	        		<span class='class fl' v-on:mouseover='showClass' v-on:mouseleave='hideClass'>视频课程
+	        		<ul class='class_ul' v-bind:class='togleClass' >
+	        			<li><a href='#' >视频课程</a></li>
+	        			<li><a href='#' >微职位培训</a></li>
+	        			<li><a href='#' >讲师</a></li>
+	        		</ul>
+	        		</span>
+	        		<input class='fl' type="text" placeholder='找课程、找讲师'>
+	        		<button class='search_btn'>搜索</button>
+	            </div>
+        	</div>
+        	<div class='nav' >
+        	    <span class='fl'>学习直通车</span>
+        		<ul>
+	        		<li><a href='javascript:void(0);'>微职位培训</a></li>
+	        		<li><a href='javascript:void(0);'>视频课程</a></li>
+	        		<li><a href='javascript:void(0);'>套餐</a></li>
+	        		<li><a href='javascript:void(0);'>路线图</a></li>
+	        		<li><a href='javascript:void(0);'>企业学习</a></li>
+	        		<li><a href='javascript:void(0);'>免费试听</a></li>
+	        		<li>
+	        			<a href='javascript:void(0);' class='offline_study'>线下学习</a>
+	        			<div class='study_ul'>
+	        				<a href='#'>CTO训练营</a>
+	        				<a href='#'>WOT峰会</a>
+	        				<a href='#'>百城沙龙</a>
+	        			</div>
+	        		</li>
+	        		<li><a href='javascript:void(0);'>讲师</a></li>
+	        		<li><a href='javascript:void(0);' class='member'>会员专区</a></li>
+	        		<li><a href='javascript:void(0);'>申请开课</a></li>
+        		</ul>
+        	</div>  	
+        	<div class='course'>
+        		<!-- <div class='study_bus'></div>
+        		<div class='turn_pic'> </div>
+        	    <div class='login'> -->
+        	</div>
+        	<div class='introduce clear'>
+        		<div class='div1 fl'>
+        			<a>
+        				<span class='ltop'>限时折扣</span>
+        				<span class='lbottom'>课程虽好不要贪多哟</span>
+        			</a>
+        		</div>
+        		<div class='div2 fl'>
+        			<a>
+        				<span class='ltop'>会员专区</span>
+        				<span class='lbottom'>2000会员课程免费学</span>
+        			</a>
+        		</div>
+        		<div class='div3 fl'>
+        			<a>
+        				<span class='ltop'>好课秒杀</span>
+        				<span class='lbottom'>每日3场秒杀不打烊</span>
+        			</a>
+        		</div>
+        	</div>
+        	<div class='train'></div>
+        	<div class='career_router'></div>
+        	<div class='daily_discount'></div>
+        	<div class='good_class'></div>
+        	<div class='teacher'></div>
+        </div>
+        <div class='footer'></div>
+
+	<div>
+</body>
+<!-- <script type="text/javascript">
+		var vm = new Vue({
+			el:"#div1",
+			data:{
+				message:"中 国 最 大 的 IT 技 能 学 习 平 台!"
+			}
+		});
+	</script> -->
+</html>
