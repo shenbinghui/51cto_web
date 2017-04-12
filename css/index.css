@@ -22,12 +22,12 @@ ul li{list-style:none;}
 .nav {height:48px;/*background: #ee9900*/}
 .course {width:100%;height:420px;background: #eee}
 .introduce {height:112px;/*background: #998877;*/padding:50px 0px;}
-.train {height:200px;background:#eee;border:1px solid yellow;}
-.career_router {height:200px;background:#eee;border:1px solid red;}
-.daily_discount {height:200px;background:#eee;border:1px solid black;}
+.train {}
+.career_router {/*height:200px;background:#eee;border:1px solid red;*/}
+.daily_discount {/*height:200px;background:#eee;border:1px solid black;*/}
 .good_class {height:200px;background:#eee;border:1px solid red;}
-.teacher {width:100%;height:500px;background: #eee}
-.footer {width:100%;height:525px;background: #fff;border:1px solid red;}
+.teacher {/*width:100%;height:500px;background: #eee*/margin:0 auto;text-align: center;}
+.footer {background: #F5F5F5;}
 
 .header span{line-height: 45px;font-size:12px;font-weight: bold;}
 .header .h_info {position: relative;}
@@ -78,7 +78,59 @@ ul li{list-style:none;}
 .introduce .div2 {background:#9a52f3 url(../images/right.png) no-repeat;}
 .introduce .div3 {background:#f55259 url(../images/right.png) no-repeat;}
 
-.introduce a {display:block;color:#fff;margin-left:30px;margin-top:20px;}
+.introduce a {display:inline-block;color:#fff;margin-left:30px;margin-top:20px;}
 .introduce a span.ltop{font-size:30px;display: block;padding:5px 0;}
 .introduce a span.lbottom{font-size:20px;}
 
+.career_router .more,.train .more {font-size:32px;font-weight: 600;color:#424242;margin:10px 0 30px 20px; width:220px;background: url(../images/more.png) no-repeat 170px center;display:inline-block;}
+
+.train a img {}
+
+.train .classes {margin-top:20px;} 
+.train .classes ul {margin-left:-10px;margin-right:-10px;} 
+.train .classes ul li {width:386px;float:left;padding:0 10px;} 
+.train .classes ul li a {} 
+.train .classes ul li a img {width:386px;height:218px;} 
+.train .classes p {margin-top:15px;font-size:18px;line-height:20px;color:#424242;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.train .classes p span {display:inline-block;font-size:16px;color:#747474;margin:0 30px 30px 0;}
+
+
+.career_router .image {}
+.career_router .image ul {margin-left:-10px;margin-right:-10px;}
+.career_router .image ul li{float:left;padding:5px 9px;}
+.career_router .image img {width:285px;height:170px;}
+.career_router .image span {}
+
+.daily_discount img {margin-top:45px;}
+
+.teacher .title{margin-top:55px;}
+.teacher .more {font-size:28px;font-weight: 500;color:#424242; width:220px;background: url(../images/more.png) no-repeat 205px center;display:inline-block;}
+
+.teacher .member {width:1200px;margin-top:80px;margin-left:auto;margin-right: auto;}
+.teacher .member ul {}
+.teacher .member ul li {float:left;padding:0 20px;width:190px;}
+.teacher .member img {border-radius:50%;}
+.teacher .member .name {font-size:20px;padding:6px;}
+.teacher .member .prof {font-size:14px;color:#747474;}
+
+.footer .link {width:1200px;margin:30px auto;padding:20px 0;border-bottom:1px solid #fff;}
+.footer .link .main{font-size:16px;color:#242424;line-height:35px;}
+.footer .link ul {margin-left:90px;}
+.footer .link ul li {float:left;margin-right:30px;}
+.footer .link a {font-size:16px;color:#242424;line-height:35px;}
+
+.footer .about {width:1200px;margin:0px auto;padding:80px 0;}
+.footer .about .qr_code {margin-left:80px;}
+.footer .about .qr_code .footer_img {margin-bottom:10px;} 
+.footer .about .qr_code .clear .fl {padding:8px;}
+.footer .about .qr_code .clear .fl p {font-size:14px;}
+.footer .contact {margin-top:60px;margin-left:75px;}
+.footer .contact ul{}
+.footer .contact ul li{float:left;padding-right:10px;font-size:16px;}
+.footer .contact ul li:after{content: '|'; padding:0 3px;}
+.footer .contact p{text-align:left}
+.footer .contact .tel {position:relative;margin-top:50px;}
+.footer .contact .tel i {position:absolute;background: url(../images/call.png) no-repeat 0px 8px;width:200px;height:200px;}
+.footer .contact .tel strong{font-size:28px;color:#c01920;padding-left:25px;}
+.footer .contact p.tel {font-size:20px;}
+.footer .contact .copyright {padding:8px 0;font-size:18px;color:#818181;}
